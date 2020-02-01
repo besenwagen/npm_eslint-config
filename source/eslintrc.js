@@ -198,7 +198,7 @@ module.exports = {
         '*.test.js',
       ],
       rules: {
-        'arow-body-style': OFF,
+        'arrow-body-style': OFF,
         camelcase: OFF,
         'func-call-spacing': OFF,
         'id-length': OFF,
