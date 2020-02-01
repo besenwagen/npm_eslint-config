@@ -3,6 +3,8 @@ const ERROR = 'error';
 const ALWAYS = 'always';
 const NEVER = 'never';
 const AS_NEEDED = 'as-needed';
+const OFF = 'off';
+const MULTILINE_ALWAYS = 'always-multiline';
 const READONLY = 'readonly';
 const INDENT_SIZE = 2;
 const MAX_COMPLEXITY = 3;
@@ -12,7 +14,6 @@ const MAX_LINE_LENGTH = 72;
 const MAX_PARAMETERS = 3;
 const MAX_STATEMENTS = 5;
 const MIN_ID_LENGTH = 2;
-const OFF = 'off';
 
 module.exports = {
   extends: 'eslint:recommended',
@@ -63,7 +64,13 @@ module.exports = {
     'no-confusing-arrow': [ERROR],
 
     // verbosity
-    'comma-dangle': [ERROR, 'always-multiline'],
+    'comma-dangle': [ERROR, {
+      arrays: MULTILINE_ALWAYS,
+      objects: MULTILINE_ALWAYS,
+      imports: MULTILINE_ALWAYS,
+      exports: MULTILINE_ALWAYS,
+      functions: NEVER,
+    }],
     curly: [ERROR],
     'default-case': [ERROR],
     eqeqeq: [ERROR],
