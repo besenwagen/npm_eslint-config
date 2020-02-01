@@ -25,6 +25,7 @@ module.exports = {
     es6: true,
   },
   globals: {
+    BigInt: READONLY,
     URL: READONLY,
     console: READONLY,
     setInterval: READONLY,
