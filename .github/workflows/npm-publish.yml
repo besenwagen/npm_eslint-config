@@ -1,0 +1,24 @@
+name: npm-publish
+on:
+  push:
+    branches:
+      - master
+jobs:
+  release:
+    name: publish
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "12.x"
+      - run: |
+          cp -r ./config ./publish
+          cd ./publish
+          npm ci
+          npx eslint -c ../source/eslintrc.js ../source/eslintrc.js
+          cp ../source/eslintrc.js ./index.js
+          npx semantic-release
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
