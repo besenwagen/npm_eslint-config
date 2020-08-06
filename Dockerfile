@@ -1,8 +1,8 @@
-FROM node:13-alpine AS update
+FROM node:14-alpine AS update
 RUN npm install\
  --global\
  --loglevel error\
- npm@6
+ npm@latest
 
 FROM update AS layout
 USER node
@@ -27,4 +27,3 @@ RUN npm install\
  --ignore-scripts
 
 FROM install AS development
-# TODO
