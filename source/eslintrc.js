@@ -203,6 +203,7 @@ module.exports = {
         'arrow-body-style': [OFF],
         camelcase: [OFF],
         'comma-dangle': [ERROR, 'only-multiline'],
+        curly: [OFF],
         'func-call-spacing': [OFF],
         'id-length': [OFF],
         indent: [OFF],
