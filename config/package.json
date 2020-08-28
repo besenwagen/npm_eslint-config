@@ -8,6 +8,11 @@
   "description": "ECMAScript lint configuration",
   "author": "Eric Bednarz <dotgitignore@outlook.com>",
   "repository": "github:eric-bednarz-dev/npm_eslint-config",
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
   "scripts": {
     "lint": "eslint -c source/eslintrc.js source/eslintrc.js"
   },
