@@ -12,7 +12,7 @@ const MAX_DEPTH = 1;
 const MAX_EMPTY_LINES = 1;
 const MAX_LINE_LENGTH = 72;
 const MAX_PARAMETERS = 3;
-const MAX_STATEMENTS = 5;
+const MAX_STATEMENTS = 7;
 const MIN_ID_LENGTH = 2;
 
 module.exports = {
