@@ -1,25 +1,28 @@
 {
-  "name": "@eric.bednarz.dev/eslint-config",
-  "version": "0.0.0-development",
-  "publishConfig": {
-    "access": "public"
-  },
-  "license": "MIT",
-  "description": "ECMAScript lint configuration",
-  "author": "Eric Bednarz <dotgitignore@outlook.com>",
-  "repository": "github:eric-bednarz-dev/npm_eslint-config",
-  "release": {
-    "branches": [
-      "main"
-    ]
-  },
-  "scripts": {
-    "lint": "eslint -c source/eslintrc.js source/eslintrc.js"
-  },
-  "peerDependencies": {
-    "eslint": "^8.1.0"
-  },
-  "devDependencies": {
-    "eslint": "^8.1.0"
-  }
+	"name": "@eric.bednarz.dev/eslint-config",
+	"version": "0.0.0-development",
+	"publishConfig": {
+		"access": "public"
+	},
+	"license": "MIT",
+	"description": "ECMAScript lint configuration",
+	"author": "Eric Bednarz <dotgitignore@outlook.com>",
+	"repository": "github:eric-bednarz-dev/npm_eslint-config",
+	"eslintConfig": {
+		"extends": "./source/eslintrc.js"
+	},
+	"release": {
+		"branches": [
+			"main"
+		]
+	},
+	"scripts": {
+		"lint": "eslint -c source/eslintrc.js source/eslintrc.js"
+	},
+	"peerDependencies": {
+		"eslint": "^8.1.0"
+	},
+	"devDependencies": {
+		"eslint": "^8.30.0"
+	}
 }

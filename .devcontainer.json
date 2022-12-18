@@ -1,0 +1,14 @@
+{
+  "name": "npm:eslint-config",
+  "dockerComposeFile": [
+    "./docker-compose.yml"
+  ],
+  "extensions": [
+    "dbaeumer.vscode-eslint",
+    "editorconfig.editorconfig"
+  ],
+  "service": "node",
+  "settings": {},
+  "shutdownAction": "stopCompose",
+  "workspaceFolder": "/home/node/workspace"
+}

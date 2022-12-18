@@ -1,6 +1,6 @@
 # `@eric.bednarz.dev/eslint-config` [![npm version][npm-image]][npm-url]
 
-> Environment-agnostic ECMAScript 2018 base configuration. Extend with module
+> Environment-agnostic ECMAScript base configuration. Extend with module
 > and host object configuration as needed.
 
 ## Peer dependencies
